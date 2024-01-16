@@ -47,7 +47,8 @@ address {
   font-style: normal;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -60,17 +61,6 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-@media (max-width: 991.98px) {
-  html {
-    font-size: 40%;
-  }
-}
-@media (max-width: 300px) {
-  html {
-    font-size: 30%;
-  }
-}
-
 body {
   position: relative;
   font-weight: 400;
@@ -83,7 +73,8 @@ body {
   }
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -112,229 +103,74 @@ a, button {
   }
 }
 
-.summary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-@media (max-width: 575.98px) {
-  .summary {
-    width: 100vw;
-  }
-}
-@media (max-width: xs) {
-  .summary {
-    width: 100vw;
-  }
-}
-
-.summary__card {
-  display: grid;
-  max-width: 73.5rem;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  grid-template-rows: 1fr;
-  background-color: hsl(0deg, 0%, 100%);
-  border-radius: 3.5rem;
-  box-shadow: 0rem 1rem 5rem -4rem hsl(234deg, 85%, 45%);
-}
-@media (max-width: 767.98px) {
-  .summary__card {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-@media (max-width: 575.98px) {
-  .summary__card {
-    width: 100%;
-  }
-}
-@media (max-width: xs) {
-  .summary__card {
-    width: 100%;
-  }
-}
-.summary__card__result {
+.business_wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  height: 100%;
-  min-height: 51.2rem;
-  padding: 4.4rem 6rem;
-  background: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
-  border-radius: 3.5rem;
+  max-width: 25rem;
 }
-@media (max-width: 575.98px) {
-  .summary__card__result {
-    min-height: 0rem;
-  }
+.business_wrapper img {
+  border-radius: 1.5rem;
 }
-@media (max-width: xs) {
-  .summary__card__result {
-    min-height: 0rem;
-  }
-}
-.summary__card__result__title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 4rem;
-  color: hsl(241deg, 100%, 89%);
-}
-.summary__card .grade-container {
-  position: relative;
-  z-index: 10;
-  color: hsl(0deg, 0%, 100%);
-  margin: 5rem 0;
-  border-radius: 10rem;
-}
-.summary__card .grade-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  width: 20rem;
-  height: 20rem;
-  background: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
-  border-radius: 10rem;
-}
-.summary__card .grade-container .grade {
-  font-size: 7rem;
-  line-height: 1;
-  font-weight: 900;
-}
-.summary__card .grade-container .full-value {
-  font-size: 1.8rem;
-  color: hsl(0deg, 0%, 100%);
-  opacity: 0.5;
-}
-.summary__card .grade-info-container {
-  margin-top: 2rem;
-}
-.summary__card .grade-name {
-  font-size: 3rem;
-  text-transform: capitalize;
-  color: hsl(0deg, 0%, 100%);
-}
-.summary__card .grade-comparison {
-  font-size: 1.8rem;
-  color: hsl(0deg, 0%, 100%);
-  margin-top: 1rem;
-  opacity: 0.5;
-}
-.summary__card__details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  min-height: 51.2rem;
-  padding: 4rem 3.8rem 4.5rem 3.8rem;
-  background: hsl(0deg, 0%, 100%);
-  border-radius: 3.5rem;
-}
-.summary__card__details__title {
+.business_wrapper .business_name {
   align-self: flex-start;
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 0rem;
-  color: hsl(224deg, 30%, 27%);
+  font-size: 2.2rem;
+  margin-top: 1.2rem;
 }
-.summary__card .details__list {
+.business_wrapper .info {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  width: 100%;
+  min-height: 5rem;
+  font-size: 1.4rem;
+  margin-top: 0.2rem;
+}
+.business_wrapper .adress {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 1.6rem;
-  margin-top: 2.8rem;
-}
-.summary__card .single-attribute-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+  text-align: left;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.65rem 1.7rem;
-  border-radius: 1rem;
-  background: green;
+  line-height: 1.2em;
+  opacity: 0.7;
 }
-.summary__card .attribute-title {
+.business_wrapper .zip_wrapper {
   display: flex;
   flex-direction: row;
-  gap: 1.2rem;
-  align-items: center;
+  gap: 0.5rem;
 }
-.summary__card .attribute-title h5 {
-  font-size: 1.7rem;
+.business_wrapper .data {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
 }
-.summary__card #reaction {
-  background-color: hsla(0deg, 100%, 67%, 0.05);
+.business_wrapper .category {
+  color: #61dafb;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
 }
-.summary__card #reaction h5 {
-  color: hsl(0deg, 100%, 67%);
+.business_wrapper .rating {
+  color: #61dafb;
+  font-weight: 700;
+  line-height: 1.2em;
 }
-.summary__card #memory {
-  background-color: hsla(39deg, 100%, 56%, 0.05);
-}
-.summary__card #memory h5 {
-  color: hsl(39deg, 100%, 56%);
-}
-.summary__card #verbal {
-  background-color: hsla(166deg, 100%, 37%, 0.05);
-}
-.summary__card #verbal h5 {
-  color: hsl(166deg, 100%, 37%);
-}
-.summary__card #visual {
-  background-color: hsla(234deg, 85%, 45%, 0.05);
-}
-.summary__card #visual h5 {
-  color: hsl(234deg, 85%, 45%);
-}
-.summary__card .attribute-result {
-  font-size: 1.7rem;
-  font-weight: 900;
-}
-.summary__card .attribute-result .value {
-  margin: 0rem 0.4rem;
-  color: hsl(224deg, 30%, 27%);
-}
-.summary__card .attribute-result .divider {
-  margin: 0rem 0rem;
-  color: hsl(224deg, 30%, 27%);
-  opacity: 0.5;
-}
-.summary__card .attribute-result .full-value {
-  margin: 0rem 0rem;
-  color: hsl(224deg, 30%, 27%);
-  opacity: 0.5;
-}
-.summary__card .continue-btn {
-  width: 100%;
-  font-size: 1.7rem;
-  font-weight: 900;
-  text-transform: capitalize;
-  margin-top: 4rem;
-  padding-top: 1.7rem;
-  padding-bottom: 1.7rem;
-  color: hsl(0deg, 0%, 100%);
-  background: hsl(224deg, 30%, 27%);
-  border-radius: 10rem;
-}
-.summary__card .continue-btn:hover {
-  background: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+.business_wrapper .reviews {
+  font-weight: 400;
+  opacity: 0.4;
 }
 
-.attribution {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 50%;
-  transform: translatex(-50%);
+body {
+  color: #fafafa;
+  font-size: 2rem;
+  min-height: 100vh;
+  background: #282c34;
+  padding: 0 2rem;
+}
+
+.App {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

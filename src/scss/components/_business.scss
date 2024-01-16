@@ -1,0 +1,66 @@
+.business_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 25rem;
+
+  img {
+    border-radius: 1.5rem;
+  }
+
+  .business_name {
+    align-self: flex-start;
+    font-size: 2.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    width: 100%;
+    min-height: 5rem;
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+  }
+
+  .adress {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    line-height: 1.2em;
+    opacity: 0.7;
+  }
+
+  .zip_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+  }
+
+  .category {
+    color: $react-accent;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+
+  .rating {
+    color: $react-accent;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+
+  .reviews {
+    font-weight: 400;
+    opacity: 0.4;
+  }
+}

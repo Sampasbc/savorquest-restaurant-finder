@@ -1,0 +1,26 @@
+{
+  "businesses": [
+    {
+      "name": "fancy restaurant",
+      "street": "1010 paddington way",
+      "city": "bordertown",
+      "state": "ny",
+      "zip": "10101",
+      "category": "italian",
+      "rating": 4.5,
+      "reviewCount": 200,
+      "imagesrc": "https://content.codecademy.com/programs/react/ravenous/pizza.jpg"
+    },
+    {
+      "name": "fancy restaurant",
+      "street": "999 fancy street",
+      "city": "new york",
+      "state": "ny",
+      "zip": "10102",
+      "category": "European",
+      "rating": 4.9,
+      "reviewCount": 142,
+      "imagesrc": "https://getsling.com/wp-content/uploads/2019/11/pasted-image-0-34.png"
+    }
+  ]
+}
