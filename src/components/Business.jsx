@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 const Business = () => {
-  const [businessData, setBusinessData] = useState([]);
-  const item = 1;
+  const [business, setBusinessData] = useState([]);
+  const item = 0;
 
   useEffect(() => {
     const fetchBusinesses = async () => {
       try {
         const response = await fetch("http://localhost:3000/businesses.json");
-        if (response.status == 200) {
+        if (response.status === 200) {
           const data = await response.json();
           setBusinessData(data["businesses"]);
           console.log(data["businesses"]);
@@ -23,27 +23,32 @@ const Business = () => {
   });
 
   return (
-    <div className="business_wrapper">
-      <img src={businessData[item].imagesrc} alt="" />
-      <h4 className="business_name">{businessData[item].name}</h4>
-      <div className="info">
-        <div className="adress">
-          <span className="street">{businessData[item].street}</span>
-          <span className="city">{businessData[item].city}</span>
-          <div className="zip_wrapper">
-            <span className="state">{businessData[item].state}</span>
-            <span className="zipcode">{businessData[item].zip}</span>
+    // <div></div>
+    <ul className="business_list">
+      {business.map((business) => (
+        <li className="business_wrapper">
+          <div className="img_container">
+            <img src={business.imagesrc} alt="" />
           </div>
-        </div>
-        <div className="data">
-          <span className="category">{businessData[item].category}</span>
-          <span className="rating">{businessData[item].rating} stars</span>
-          <span className="reviews">
-            {businessData[item].reviewCount} reviews
-          </span>
-        </div>
-      </div>
-    </div>
+          <h4 className="business_name">{business.name}</h4>
+          <div className="info">
+            <div className="adress">
+              <span className="street">{business.street}</span>
+              <span className="city">{business.city}</span>
+              <div className="zip_wrapper">
+                <span className="state">{business.state}</span>
+                <span className="zipcode">{business.zip}</span>
+              </div>
+            </div>
+            <div className="data">
+              <span className="category">{business.category}</span>
+              <span className="rating">{business.rating} stars</span>
+              <span className="reviews">{business.reviewCount} reviews</span>
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
   );
 };
 

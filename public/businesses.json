@@ -1,7 +1,7 @@
 {
   "businesses": [
     {
-      "name": "fancy restaurant",
+      "name": "marginOtto pizzeria",
       "street": "1010 paddington way",
       "city": "bordertown",
       "state": "ny",
@@ -20,6 +20,28 @@
       "category": "European",
       "rating": 4.9,
       "reviewCount": 142,
+      "imagesrc": "https://getsling.com/wp-content/uploads/2019/11/pasted-image-0-34.png"
+    },
+    {
+      "name": "fancy restaurant 2",
+      "street": "1000 fancy street",
+      "city": "new york",
+      "state": "ny",
+      "zip": "10103",
+      "category": "Japanese",
+      "rating": 4.4,
+      "reviewCount": 479,
+      "imagesrc": "https://getsling.com/wp-content/uploads/2019/11/pasted-image-0-34.png"
+    },
+    {
+      "name": "fancy restaurant 3",
+      "street": "1000 fancy street",
+      "city": "new york",
+      "state": "ny",
+      "zip": "10103",
+      "category": "Japanese",
+      "rating": 4.4,
+      "reviewCount": 479,
       "imagesrc": "https://getsling.com/wp-content/uploads/2019/11/pasted-image-0-34.png"
     }
   ]

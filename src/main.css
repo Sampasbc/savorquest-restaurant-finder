@@ -103,19 +103,43 @@ button {
   }
 }
 
+.business_list {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  max-width: 70rem;
+}
+@media screen and (max-width: 1200px) {
+  .business_list {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
 .business_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 4rem;
   max-width: 25rem;
+  transition: all 200ms ease;
 }
-.business_wrapper img {
+.business_wrapper:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.business_wrapper .img_container {
+  height: 25rem;
+  width: 25rem;
+  overflow: hidden;
   border-radius: 1.5rem;
 }
 .business_wrapper .business_name {
   align-self: flex-start;
   font-size: 2.2rem;
   margin-top: 1.2rem;
+  text-transform: capitalize;
 }
 .business_wrapper .info {
   display: grid;
@@ -131,11 +155,13 @@ button {
   text-align: left;
   justify-content: space-between;
   line-height: 1.2em;
+  text-transform: capitalize;
   opacity: 0.7;
 }
 .business_wrapper .zip_wrapper {
   display: flex;
   flex-direction: row;
+  text-transform: uppercase;
   gap: 0.5rem;
 }
 .business_wrapper .data {
@@ -171,6 +197,10 @@ body {
 
 .App {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
