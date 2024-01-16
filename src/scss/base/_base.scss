@@ -1,0 +1,45 @@
+
+html, body {
+  overflow-x:hidden 
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @include breakpoint(md) {
+    font-size: 40%;
+  }
+  @include breakpoint(300px) {
+    font-size: 30%;
+  }
+}
+
+body {
+  position: relative;
+  font-weight: 400;
+  font-family: $main-font;
+  line-height: 1.5;
+  
+  @include breakpoint(md) {
+    line-height: 1.25;
+  }
+}
+
+a, button {
+  // background-color: transparent;
+  cursor: pointer;
+  // transition: color .3s, background-color .3s;
+}
+
+
+// Disable AOS Animate Delay mobile
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}

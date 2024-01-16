@@ -1,0 +1,237 @@
+.summary {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+
+ @include breakpoint(xs) {
+  width: 100vw;
+ }
+}
+
+.summary__card {
+  display: grid;
+  max-width: 73.5rem;
+  grid-template-columns: 1fr 1fr;  align-items: center;
+  grid-template-rows: 1fr;
+  background-color: $white;
+  border-radius: 3.5rem;
+  box-shadow: 0rem 1rem 5rem -4rem $cobalt-blue;
+
+  @include breakpoint (sm) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @include breakpoint (xs) {
+    width: 100%;
+  }
+
+  // YOUR RESULT
+  
+  &__result {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    min-height: 51.2rem;
+    padding: 4.4rem 6rem;
+    background: linear-gradient($light-slate-blue, $light-royal-blue);
+    border-radius: 3.5rem;
+
+    @include breakpoint (xs) {
+      min-height: 0rem;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 4rem;
+      color: $light-lavender;
+    }
+  }
+  
+  .grade-container {
+    position: relative;
+    z-index: 10;
+    color: $white;
+    margin: 5rem 0;
+    // padding: 5.5rem;
+    
+    border-radius: 10rem;
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      width: 20rem;
+      height: 20rem;
+      background: linear-gradient($violet-blue, $persian-blue);
+      border-radius: 10rem;
+    }
+
+    .grade{
+      font-size: 7rem;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .full-value {
+      font-size: 1.8rem;
+      color: $white;
+      opacity: 0.5;
+    }
+  }
+  
+  .grade-info-container {
+    margin-top: 2rem;
+  }
+  
+  .grade-name {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $white;
+  }
+  
+  .grade-comparison {
+    font-size: 1.8rem;
+    color: $white;
+    margin-top: 1rem;
+    opacity: 0.5
+  }
+
+  // SUMMARY
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    min-height: 51.2rem;
+    padding: 4.0rem 3.8rem 4.5rem 3.8rem ;
+    background: $white;
+    border-radius: 3.5rem;
+
+    &__title {
+      align-self: flex-start;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0rem;
+      color: $dark-gray-blue;
+    }
+  }
+
+  .details__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.6rem;
+    margin-top: 2.8rem;
+  }
+
+  .single-attribute-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.65rem 1.7rem;
+    border-radius: 1rem;
+    background: green;
+  }
+
+  .attribute-title {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    align-items: center;
+
+    h5 {
+      font-size: 1.7rem;
+    }
+  }
+
+  #reaction {
+    background-color: $light-red-background;
+    
+    h5 {
+      color: $light-red;
+    }
+  }
+
+  #memory {
+    background-color: $orangey-yellow-background;
+    
+    h5 {
+      color: $orangey-yellow;
+    }
+  }
+
+  #verbal {
+    background-color: $green-teal-background;
+    
+    h5 {
+      color: $green-teal;
+    }
+  }
+
+  #visual {
+    background-color: $cobalt-blue-background;
+    
+    h5 {
+      color: $cobalt-blue;
+    }
+  }
+
+  .attribute-result{
+    font-size: 1.7rem;
+    font-weight: 900;
+    .value{
+      margin: 0rem 0.4rem;
+      color: $dark-gray-blue;
+    }
+    .divider {
+      margin: 0rem 0rem;
+      color: $dark-gray-blue;
+      opacity: 0.5;
+    }
+    .full-value {
+      margin: 0rem 0rem;
+      color: $dark-gray-blue;
+      opacity: 0.5;
+    }
+  }
+  
+  .continue-btn {
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 4rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    color: $white;
+    background: $dark-gray-blue;
+    border-radius: 10rem;
+    
+    &:hover {
+      background: linear-gradient($light-slate-blue, $light-royal-blue);
+    }
+  }
+
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translatex(-50%);
+}

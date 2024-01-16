@@ -1,0 +1,11 @@
+.container {
+  max-width: 124rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  @include breakpoint(xs) {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+} 
