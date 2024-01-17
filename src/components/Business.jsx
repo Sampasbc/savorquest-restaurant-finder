@@ -24,7 +24,7 @@ const Business = () => {
 
   return (
     // <div></div>
-    <ul className="business_list">
+    <ul className="business_list" id="business">
       {business.map((business) => (
         <li className="business_wrapper">
           <div className="img_container">

@@ -11,5 +11,9 @@
 
   .logo {
     max-width: 15rem;
+    transition: all 200ms ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
