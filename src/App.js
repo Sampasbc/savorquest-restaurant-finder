@@ -4,6 +4,7 @@ import "./main.css";
 import Business from "./components/Business";
 import Header from "./components/Header";
 import Search from "./components/Search";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header>{/* <SearchBar /> */}</Header>
       <Search />
       <Business />
+      <Footer />
     </div>
   );
 }

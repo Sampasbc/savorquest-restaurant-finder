@@ -108,6 +108,7 @@ button {
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
+  padding-bottom: 5rem;
 }
 @media screen and (max-width: 1200px) {
   .business_list {
@@ -254,6 +255,15 @@ button {
 }
 .search button:hover {
   transform: scale(0.95);
+}
+
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  background: #13161c;
+}
+.footer .footer_text {
+  font-size: 1.4rem;
 }
 
 body {
