@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 const Business = () => {
   const [business, setBusinessData] = useState([]);
-  const item = 0;
 
   useEffect(() => {
     const fetchBusinesses = async () => {
@@ -28,7 +27,7 @@ const Business = () => {
       {business.map((business) => (
         <li className="business_wrapper">
           <div className="img_container">
-            <img src={business.imagesrc} alt="" />
+            <img src={business.imagesrc} alt="Business" />
           </div>
           <h4 className="business_name">{business.name}</h4>
           <div className="info">

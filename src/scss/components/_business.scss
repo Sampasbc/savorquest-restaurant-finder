@@ -20,19 +20,20 @@
   max-width: 25rem;
   transition: all 200ms ease;
 
-  &:hover {
+  &:hover img {
+    // cursor: pointer;
     opacity: 0.8;
-    cursor: pointer;
   }
 
   .img_container {
     height: 25rem;
     width: 25rem;
     overflow: hidden;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
   }
 
   img {
+    transition: all 150ms ease;
   }
 
   .business_name {
