@@ -108,12 +108,17 @@ button {
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  max-width: 70rem;
 }
 @media screen and (max-width: 1200px) {
   .business_list {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .business_list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
@@ -218,6 +223,12 @@ button {
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+}
+@media only screen and (max-width: 560px) {
+  .search .input_wrapper {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
 }
 .search .search_input {
   color: #fafafa;
