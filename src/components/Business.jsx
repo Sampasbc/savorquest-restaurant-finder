@@ -21,6 +21,18 @@ const Business = () => {
     fetchBusinesses();
   });
 
+  const formatReview = (review) => {
+    if (review < 1000) {
+      return review;
+    }
+    if (review % 1000 !== 0) {
+      review = (review / 1000).toFixed(1);
+      return review + "k";
+    }
+    review = (review / 1000).toFixed(0);
+    return Math.floor(review) + "k";
+  };
+
   return (
     // <div></div>
     <ul className="business_list" id="business">
@@ -42,7 +54,9 @@ const Business = () => {
             <div className="data">
               <span className="category">{business.category}</span>
               <span className="rating">{business.rating} stars</span>
-              <span className="reviews">{business.reviewCount} reviews</span>
+              <span className="reviews">
+                {formatReview(business.reviewCount)} reviews
+              </span>
             </div>
           </div>
         </li>

@@ -8,7 +8,7 @@
       "zip": "10101",
       "category": "italian",
       "rating": 4.5,
-      "reviewCount": 200,
+      "reviewCount": 2600,
       "imagesrc": "https://content.codecademy.com/programs/react/ravenous/pizza.jpg"
     },
     {
@@ -30,7 +30,7 @@
       "zip": "10103",
       "category": "Japanese",
       "rating": 4.4,
-      "reviewCount": 479,
+      "reviewCount": 2000,
       "imagesrc": "https://getsling.com/wp-content/uploads/2019/11/pasted-image-0-34.png"
     },
     {
