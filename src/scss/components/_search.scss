@@ -1,0 +1,41 @@
+.search {
+  width: 100%;
+  padding: 20rem 0 5rem;
+  background: $react-tertiary;
+
+  .input_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .search_input {
+    color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #fafafa55;
+  }
+
+  ::placeholder {
+    color: #ffffff88;
+  }
+
+  button {
+    color: $react-accent;
+    font-weight: 700;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background: $react-secondary;
+    transition: all 200ms ease;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+}

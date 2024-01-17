@@ -109,7 +109,6 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   max-width: 70rem;
-  margin-top: 15rem;
 }
 @media screen and (max-width: 1200px) {
   .business_list {
@@ -207,6 +206,43 @@ button {
 }
 .header .logo:hover {
   opacity: 0.8;
+}
+
+.search {
+  width: 100%;
+  padding: 20rem 0 5rem;
+  background: #444851;
+}
+.search .input_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.search .search_input {
+  color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(250, 250, 250, 0.3333333333);
+}
+.search ::placeholder {
+  color: rgba(255, 255, 255, 0.5333333333);
+}
+.search button {
+  color: #61dafb;
+  font-weight: 700;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background: #13161c;
+  transition: all 200ms ease;
+}
+.search button:hover {
+  transform: scale(0.95);
 }
 
 body {
