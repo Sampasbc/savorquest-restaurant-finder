@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: #13161c;
+  z-index: 10;
+
+  .logo {
+    max-width: 15rem;
+  }
+}

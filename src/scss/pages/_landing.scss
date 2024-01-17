@@ -3,11 +3,11 @@ body {
   font-size: 2rem;
   min-height: 100vh;
   background: $react-primary;
-  padding: 0 2rem;
+  padding: 0 0rem;
+  overflow: hidden;
 }
 
 .App {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

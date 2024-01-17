@@ -109,6 +109,7 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   max-width: 70rem;
+  margin-top: 15rem;
 }
 @media screen and (max-width: 1200px) {
   .business_list {
@@ -187,16 +188,31 @@ button {
   opacity: 0.4;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background: #13161c;
+  z-index: 10;
+}
+.header .logo {
+  max-width: 15rem;
+}
+
 body {
   color: #fafafa;
   font-size: 2rem;
   min-height: 100vh;
   background: #282c34;
-  padding: 0 2rem;
+  padding: 0 0rem;
+  overflow: hidden;
 }
 
 .App {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

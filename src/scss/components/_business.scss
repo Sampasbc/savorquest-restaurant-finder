@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   max-width: 70rem;
+  margin-top: 15rem;
 
   @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
