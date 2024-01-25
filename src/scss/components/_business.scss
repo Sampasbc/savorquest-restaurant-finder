@@ -30,6 +30,7 @@
   }
 
   .img_container {
+    display: flex;
     height: 25rem;
     width: 25rem;
     overflow: hidden;
@@ -37,6 +38,9 @@
   }
 
   img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     transition: all 150ms ease;
   }
 

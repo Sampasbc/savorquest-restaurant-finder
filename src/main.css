@@ -135,12 +135,16 @@ button {
   opacity: 0.8;
 }
 .business_wrapper .img_container {
+  display: flex;
   height: 25rem;
   width: 25rem;
   overflow: hidden;
   border-radius: 1rem;
 }
 .business_wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   transition: all 150ms ease;
 }
 .business_wrapper .business_name {
