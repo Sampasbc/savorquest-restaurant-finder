@@ -19,7 +19,7 @@ const Business = () => {
       }
     };
     fetchBusinesses();
-  });
+  }, []);
 
   const formatReview = (review) => {
     if (review < 1000) {

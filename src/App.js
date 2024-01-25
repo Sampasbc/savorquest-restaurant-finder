@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Header>{/* <SearchBar /> */}</Header>
+      <Header />
       <Search />
       <Business />
       <Footer />
